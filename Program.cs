@@ -31,25 +31,62 @@ namespace BowlingGame
         ArrayList scores_array = new ArrayList();
 
 
-         int PinCount(int pinPosition)
-        {
-            return (int)scores_array[pinPosition];
-        }
+      
 
 
-        public int Score(int frame, int rl1, int rl2, int rl3, int rl4) // calculate score for this frame only
+   
+
+        public int Score(int frame, int rl1, int rl2, int rl3, bool strike, bool spare) // calculate score for this frame only
         {
  
             int total = 0;
        
                if(frame == 1)
             {
-                total = rl1 + rl2;
+
+
+                if (spare == true)
+                {
+                    total = 10 ;
+
+                }
+                else if (strike == true)
+                {
+                    total = 10 ;
+
+                }
+
+                else
+                {
+
+                    total = rl1 + rl2 ;
+
+                }
+
+
+
+
             }
             else
             {
+                if (spare == true)
+                {
+                    total = 10 + rl3;
 
-                total = rl1 + rl2 + rl3 + rl4;
+                } else if(strike == true)
+                {
+                    total = 10  + rl3;
+
+                }
+             
+                else
+                {
+
+                    total = rl1 + rl2 + rl3 ;
+
+                }
+
+
 
             }
                                
@@ -58,6 +95,32 @@ namespace BowlingGame
         }
 
 
+
+        //UpdatPrevTotal(frames -1, game.UpdateScore(roll1, roll2, prevtotal, strike, spare));
+
+
+        public int UpdateScore(int rl1, int rl2, int rl3, bool strike, bool spare) // calculate score for this frame only
+        {
+
+            int total = 0;
+
+         
+           
+                if (strike == true)
+                {
+                total =  rl1 + rl2 + rl3;
+
+            }
+            else if(spare == true)
+                {
+                total = rl1 + rl3;
+
+            }
+            
+
+
+            return total;
+        }
 
 
 
@@ -77,39 +140,10 @@ namespace BowlingGame
         
         }
 
-        public void frames()
-        {
+       
 
 
-
-
-
-
-
-
-
-        }
-
-
-        int score1()
-        {
-            int total = 0;
-
-
-
-            foreach (var score in scores_array)
-            {
-                total += (int)score;
-            }
-
-
-
-            scores_array.Clear();
-
-            return total; 
-
-        }
-
+  
 
 
 

@@ -71,6 +71,8 @@
             this.richTextBox28 = new System.Windows.Forms.RichTextBox();
             this.richTextBox29 = new System.Windows.Forms.RichTextBox();
             this.richTextBox30 = new System.Windows.Forms.RichTextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -86,7 +88,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Location = new System.Drawing.Point(621, 286);
+            this.button1.Location = new System.Drawing.Point(518, 282);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 60);
             this.button1.TabIndex = 31;
@@ -113,6 +115,7 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox1.Location = new System.Drawing.Point(0, 42);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(115, 120);
@@ -121,6 +124,7 @@
             // 
             // richTextBox2
             // 
+            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox2.Location = new System.Drawing.Point(56, 9);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(59, 37);
@@ -140,6 +144,7 @@
             // 
             // richTextBox3
             // 
+            this.richTextBox3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox3.Location = new System.Drawing.Point(0, 9);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(56, 35);
@@ -159,6 +164,7 @@
             // 
             // richTextBox4
             // 
+            this.richTextBox4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox4.Location = new System.Drawing.Point(0, 42);
             this.richTextBox4.Name = "richTextBox4";
             this.richTextBox4.Size = new System.Drawing.Size(115, 120);
@@ -167,6 +173,7 @@
             // 
             // richTextBox5
             // 
+            this.richTextBox5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox5.Location = new System.Drawing.Point(56, 9);
             this.richTextBox5.Name = "richTextBox5";
             this.richTextBox5.Size = new System.Drawing.Size(59, 37);
@@ -175,6 +182,7 @@
             // 
             // richTextBox6
             // 
+            this.richTextBox6.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox6.Location = new System.Drawing.Point(0, 9);
             this.richTextBox6.Name = "richTextBox6";
             this.richTextBox6.Size = new System.Drawing.Size(61, 37);
@@ -194,6 +202,7 @@
             // 
             // richTextBox7
             // 
+            this.richTextBox7.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox7.Location = new System.Drawing.Point(0, 42);
             this.richTextBox7.Name = "richTextBox7";
             this.richTextBox7.Size = new System.Drawing.Size(115, 120);
@@ -202,6 +211,7 @@
             // 
             // richTextBox8
             // 
+            this.richTextBox8.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox8.Location = new System.Drawing.Point(56, 9);
             this.richTextBox8.Name = "richTextBox8";
             this.richTextBox8.Size = new System.Drawing.Size(59, 37);
@@ -210,6 +220,7 @@
             // 
             // richTextBox9
             // 
+            this.richTextBox9.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox9.Location = new System.Drawing.Point(0, 9);
             this.richTextBox9.Name = "richTextBox9";
             this.richTextBox9.Size = new System.Drawing.Size(61, 37);
@@ -229,6 +240,7 @@
             // 
             // richTextBox10
             // 
+            this.richTextBox10.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox10.Location = new System.Drawing.Point(0, 42);
             this.richTextBox10.Name = "richTextBox10";
             this.richTextBox10.Size = new System.Drawing.Size(115, 120);
@@ -237,6 +249,7 @@
             // 
             // richTextBox11
             // 
+            this.richTextBox11.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox11.Location = new System.Drawing.Point(56, 9);
             this.richTextBox11.Name = "richTextBox11";
             this.richTextBox11.Size = new System.Drawing.Size(59, 37);
@@ -245,6 +258,7 @@
             // 
             // richTextBox12
             // 
+            this.richTextBox12.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox12.Location = new System.Drawing.Point(0, 9);
             this.richTextBox12.Name = "richTextBox12";
             this.richTextBox12.Size = new System.Drawing.Size(61, 37);
@@ -264,6 +278,7 @@
             // 
             // richTextBox13
             // 
+            this.richTextBox13.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox13.Location = new System.Drawing.Point(0, 42);
             this.richTextBox13.Name = "richTextBox13";
             this.richTextBox13.Size = new System.Drawing.Size(115, 120);
@@ -272,6 +287,7 @@
             // 
             // richTextBox14
             // 
+            this.richTextBox14.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox14.Location = new System.Drawing.Point(56, 9);
             this.richTextBox14.Name = "richTextBox14";
             this.richTextBox14.Size = new System.Drawing.Size(59, 37);
@@ -280,6 +296,7 @@
             // 
             // richTextBox15
             // 
+            this.richTextBox15.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox15.Location = new System.Drawing.Point(0, 9);
             this.richTextBox15.Name = "richTextBox15";
             this.richTextBox15.Size = new System.Drawing.Size(61, 37);
@@ -299,6 +316,7 @@
             // 
             // richTextBox16
             // 
+            this.richTextBox16.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox16.Location = new System.Drawing.Point(0, 42);
             this.richTextBox16.Name = "richTextBox16";
             this.richTextBox16.Size = new System.Drawing.Size(115, 120);
@@ -307,6 +325,7 @@
             // 
             // richTextBox17
             // 
+            this.richTextBox17.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox17.Location = new System.Drawing.Point(56, 9);
             this.richTextBox17.Name = "richTextBox17";
             this.richTextBox17.Size = new System.Drawing.Size(59, 37);
@@ -315,6 +334,7 @@
             // 
             // richTextBox18
             // 
+            this.richTextBox18.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox18.Location = new System.Drawing.Point(0, 9);
             this.richTextBox18.Name = "richTextBox18";
             this.richTextBox18.Size = new System.Drawing.Size(61, 37);
@@ -334,6 +354,7 @@
             // 
             // richTextBox19
             // 
+            this.richTextBox19.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox19.Location = new System.Drawing.Point(0, 42);
             this.richTextBox19.Name = "richTextBox19";
             this.richTextBox19.Size = new System.Drawing.Size(115, 120);
@@ -342,6 +363,7 @@
             // 
             // richTextBox20
             // 
+            this.richTextBox20.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox20.Location = new System.Drawing.Point(56, 9);
             this.richTextBox20.Name = "richTextBox20";
             this.richTextBox20.Size = new System.Drawing.Size(59, 37);
@@ -350,6 +372,7 @@
             // 
             // richTextBox21
             // 
+            this.richTextBox21.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox21.Location = new System.Drawing.Point(0, 9);
             this.richTextBox21.Name = "richTextBox21";
             this.richTextBox21.Size = new System.Drawing.Size(61, 37);
@@ -369,6 +392,7 @@
             // 
             // richTextBox22
             // 
+            this.richTextBox22.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox22.Location = new System.Drawing.Point(0, 42);
             this.richTextBox22.Name = "richTextBox22";
             this.richTextBox22.Size = new System.Drawing.Size(115, 120);
@@ -377,6 +401,7 @@
             // 
             // richTextBox23
             // 
+            this.richTextBox23.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox23.Location = new System.Drawing.Point(56, 9);
             this.richTextBox23.Name = "richTextBox23";
             this.richTextBox23.Size = new System.Drawing.Size(59, 37);
@@ -385,6 +410,7 @@
             // 
             // richTextBox24
             // 
+            this.richTextBox24.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox24.Location = new System.Drawing.Point(0, 9);
             this.richTextBox24.Name = "richTextBox24";
             this.richTextBox24.Size = new System.Drawing.Size(61, 37);
@@ -404,6 +430,7 @@
             // 
             // richTextBox25
             // 
+            this.richTextBox25.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox25.Location = new System.Drawing.Point(0, 42);
             this.richTextBox25.Name = "richTextBox25";
             this.richTextBox25.Size = new System.Drawing.Size(115, 120);
@@ -412,6 +439,7 @@
             // 
             // richTextBox26
             // 
+            this.richTextBox26.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox26.Location = new System.Drawing.Point(56, 9);
             this.richTextBox26.Name = "richTextBox26";
             this.richTextBox26.Size = new System.Drawing.Size(59, 37);
@@ -420,6 +448,7 @@
             // 
             // richTextBox27
             // 
+            this.richTextBox27.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox27.Location = new System.Drawing.Point(0, 9);
             this.richTextBox27.Name = "richTextBox27";
             this.richTextBox27.Size = new System.Drawing.Size(61, 37);
@@ -439,6 +468,7 @@
             // 
             // richTextBox28
             // 
+            this.richTextBox28.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox28.Location = new System.Drawing.Point(0, 42);
             this.richTextBox28.Name = "richTextBox28";
             this.richTextBox28.Size = new System.Drawing.Size(115, 120);
@@ -447,6 +477,7 @@
             // 
             // richTextBox29
             // 
+            this.richTextBox29.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox29.Location = new System.Drawing.Point(56, 9);
             this.richTextBox29.Name = "richTextBox29";
             this.richTextBox29.Size = new System.Drawing.Size(59, 37);
@@ -455,11 +486,33 @@
             // 
             // richTextBox30
             // 
+            this.richTextBox30.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox30.Location = new System.Drawing.Point(0, 9);
             this.richTextBox30.Name = "richTextBox30";
             this.richTextBox30.Size = new System.Drawing.Size(61, 37);
             this.richTextBox30.TabIndex = 67;
             this.richTextBox30.Text = "";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(623, 513);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(89, 54);
+            this.button2.TabIndex = 79;
+            this.button2.Text = "EXIT";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button3.Location = new System.Drawing.Point(703, 282);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(102, 60);
+            this.button3.TabIndex = 80;
+            this.button3.Text = "Reset Button";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -467,6 +520,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1335, 618);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox8);
@@ -543,5 +598,7 @@
         private RichTextBox richTextBox28;
         private RichTextBox richTextBox29;
         private RichTextBox richTextBox30;
+        private Button button2;
+        private Button button3;
     }
 }
