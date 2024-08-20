@@ -28,13 +28,12 @@ namespace BowlingGame
     {
 
 
-        ArrayList scores_array = new ArrayList();
 
 
-      
+
+       
 
 
-   
 
         public int Score(int frame, int rl1, int rl2, int rl3, bool strike, bool spare) // calculate score for this frame only
         {
@@ -96,23 +95,37 @@ namespace BowlingGame
 
 
 
-        //UpdatPrevTotal(frames -1, game.UpdateScore(roll1, roll2, prevtotal, strike, spare));
+       // properly update previous frame with new score
 
 
-        public int UpdateScore(int rl1, int rl2, int rl3, bool strike, bool spare) // calculate score for this frame only
+        public int UpdateScore(int frames, int rl1, int rl2, int rl3, bool strike, bool prevstrike, bool spare, bool prevspare) // calculate score for this frame only
         {
 
             int total = 0;
 
-         
+         if(prevspare == true)
+            {
+
+              total =  rl3 + rl1;
+
+
+            } else
            
-                if (strike == true)
+                if ((strike == true && prevstrike == true) || (strike == true && prevspare == true))
                 {
-                total =  rl1 + rl2 + rl3;
+                total = 10 + rl3;
 
             }
-            else if(spare == true)
+            else if((spare == true && prevspare == true) || (spare == true && prevstrike == true))
                 {
+                total = rl1 + rl3;
+
+            } else if(prevstrike == true && strike == false && spare == false)
+            {
+                total = rl1 + rl2 + rl3;
+
+            } else if(prevspare == true && spare == false && strike == false)
+            {
                 total = rl1 + rl3;
 
             }
@@ -127,18 +140,6 @@ namespace BowlingGame
 
 
 
-
-        public bool  roll(int pins)
-        {
-            
-            scores_array.Add(pins);
-
-
-            return true;
-
-              
-        
-        }
 
        
 

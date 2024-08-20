@@ -92,22 +92,36 @@ namespace BowlingGame
             bool strike = false; // there is "carryover" when there is a strike or spare, by which I mean the total will update
             bool spare = false;             // in the next frame. This flag will trigger that
 
-            string spare1 = "Spare!";
+            bool prevstrike = false;
+            bool prevspare = false;
+       
+            
+            
+            string spare1 = "Spr!";
 
-            string strike1 = "Strike!";
+            string strike1 = "Strk!";
 
  
                 
             int prevtotal = 0;
 
-            int prevtotalnum = 0;
+        
 
             for (int frames = 1; frames < 11; frames++)  // 10 frames, 3 textboxes per frame
             {
 
+                if(frames > 1)     // set prev to current and reset current
+                {
+                    prevspare = spare;
+                    prevstrike = strike;
+                    spare = false;
+                    strike = false;
+
+                }
 
 
-                Random rnd = new Random();
+
+                Random rnd = new Random();    // get both rolls, which are random numbers between 1 and 10
                  roll1 = rnd.Next(1, 11);
 
                 if (roll1 < 9)
@@ -119,24 +133,16 @@ namespace BowlingGame
 
                 
 
-                int roll1num = (frames * 3 - 3) + 1;
+   
 
-                int roll2num = (frames * 3 - 3) + 2;
-
-                int total3num = (frames * 3 - 3) + 3;
-
-                if(frames > 1)
-                {
-                    prevtotalnum = ((frames - 1) * 3 - 3) + 3;
-
-                }
+              
 
 
 
       
 
 
-                if (frames > 1)
+                if (frames > 1)   // extract total from last frame
                 {
                                          
 
@@ -147,33 +153,33 @@ namespace BowlingGame
 
                 /****************************************************************************************************/
                 //lookback here is where I check the carryflag from previous run. If it is true, then I go back 
-                // and update previous frame.
+                // and update previous frame total with additional new value depending on spare or strike.
 
                 Game game = new Game();
 
 
-                if (strike == true && frames > 1)
+                if (prevstrike == true && frames > 1)
                 {
 
+                     
 
+                    UpdatPrevTotal(frames -1, game.UpdateScore(frames, roll1, roll2, prevtotal, strike, prevstrike, spare, prevspare));
 
-                    UpdatPrevTotal(frames -1, game.UpdateScore(roll1, roll2, prevtotal, strike, spare));
-
-                    strike = false;
+                
 
                 }
 
 
-                if (spare == true && frames > 1)
+                if (prevspare == true && frames > 1)
                 {
 
 
 
-                    UpdatPrevTotal(frames -1, game.UpdateScore(roll1, roll2, prevtotal, strike, spare));
+                    UpdatPrevTotal(frames -1, game.UpdateScore(frames, roll1, roll2, prevtotal, strike, prevstrike, spare, prevspare));
 
 
 
-                    spare = false;
+                     
 
                 }
 
@@ -197,10 +203,13 @@ namespace BowlingGame
 
                 /*************************************************************************************************************/
 
-
+                // ok, previous updates done, now checking current frame and updating
 
                 if (roll1 + roll2 > 9 && (roll1 < 10 && roll2 < 10))
                 {
+                    
+                    
+                  
                     spare = true;
 
 
@@ -213,8 +222,10 @@ namespace BowlingGame
                         
                if(roll1 > 9 || roll2 > 9)
                 {
+                 
                     strike = true;
                   
+
                     UpdateValues(frames, game.Score(frames, roll1, roll2, prevtotal, strike, spare).ToString(), strike1, " ");
 
                     
@@ -223,6 +234,8 @@ namespace BowlingGame
 
                 if (roll1 + roll2 < 10)
                 {
+                    
+
 
                  UpdateValues(frames, game.Score(frames, roll1, roll2, prevtotal, strike, spare).ToString(), roll2.ToString(), roll1.ToString());
 
@@ -233,8 +246,7 @@ namespace BowlingGame
                 
 
  
- 
-                  game.roll(roll1);  // add to array for validation at end
+  
 
                 
 
@@ -438,7 +450,7 @@ namespace BowlingGame
         }
 
 
-
+   
 
         public void UpdatPrevTotal(int frame, int value1)
         {
